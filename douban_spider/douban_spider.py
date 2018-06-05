@@ -22,6 +22,7 @@ capabilities = webdriver.DesiredCapabilities().INTERNETEXPLORER
 capabilities['acceptSslCerts'] = True
 
 browser = webdriver.Chrome(chrome_options=chrome_options)
+
 csv_file = open("book_list.csv", "w", newline='', encoding='utf-8')
 writer = csv.writer(csv_file)
 writer.writerow([u'书名', u'评级', u'时间', u'封面'])
